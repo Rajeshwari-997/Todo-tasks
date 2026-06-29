@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" 
+rel="stylesheet">
+    </head>
+    <body>
+        <h1>Modern Todo App</h1>
+        <h4>Manage your tasks with style</h4>
+        <div id="input-container">
+        <input type="text" placeholder="Add a new Task..." id="input">
+        <button onclick="update()">Add Task</button>
+        </div>
+        <div id="output-container">
+        <div class="container"><p>Ex:Write blog post</p>
+            <button id="addbtn" onclick="check(event)">✓</button>
+            <button id="delbtn" onclick="delItem(event)">✗</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
